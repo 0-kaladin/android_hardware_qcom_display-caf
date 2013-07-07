@@ -8,7 +8,6 @@ LOCAL_MODULE_TAGS             := optional
 LOCAL_C_INCLUDES              := $(common_includes) $(kernel_includes)
 LOCAL_SHARED_LIBRARIES        := $(common_libs) libqdutils libmemalloc libsync
 LOCAL_CFLAGS                  := $(common_flags) -DLOG_TAG=\"qdoverlay\"
-LOCAL_CFLAGS                  += -Wno-attributes $(call cc-option,-Wno-error=unused-parameter)
 LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
 LOCAL_SRC_FILES := \
       overlay.cpp \
